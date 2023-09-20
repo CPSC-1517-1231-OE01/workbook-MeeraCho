@@ -1,4 +1,6 @@
-﻿namespace HockeyData
+﻿using Utils; //namespace
+
+namespace Hockey.Data
 {
     public class HockeyPlayer
     {
@@ -23,12 +25,44 @@
             }
             set //public void set(string value)
             {
-                if (string.IsNullOrWhiteSpace(value){
+                if (string.IsNullOrWhiteSpace(value)){
                     throw new ArgumentException("Birth place cannot be null or empty.");
                     //creating new instance.object. Constructor. function for argumentException class 
                 } 
                 //if we get here, then no exception happened
-                 _birthPlace = value; //value가 조건에 안맞으면 throw an exception 한다    
+                 _birthPlace = value; 
+            }
+        }
+
+        public string FirstName
+        {
+            get
+            {
+                return _firstName;
+            }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("First name cannot be null or empty.");
+                }
+                _firstName = value; 
+            }
+        }
+
+        public string LastName
+        {
+            get
+            {
+                return _lastName;
+            }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Last name cannot be null or empty.");
+                }
+                _firstName = value;
             }
         }
 
@@ -40,7 +74,7 @@
             }
             set
             {
-                if(value <= 0)
+                if(Utilities.IsZeroOrNegative(value))
                 {
                     throw new ArgumentException("Height must be positive.");
                 }
@@ -48,7 +82,22 @@
             }
         }
 
-        //TODO: complete the remaining int property 
+        public int WeightInPound
+        {
+            get
+            {
+                return _weightInPounds;
+            }
+            set
+            {
+                if (!Utilities.IsPositive(value))
+                {
+                    throw new ArgumentException("Weight must be positive.");
+                }
+                _weightInPounds = value;
+            }
+        }
+ 
         public DateOnly DateOfBirth
         {
             get
@@ -57,13 +106,17 @@
             }
             set
             {
-                //TODO: inplement a validity check for dates in the future
+                //a validity check for dates in the future
                 // check the documentation for DateOnly
+                if (Utilities.IsInTheFuture(value))
+                {
+                    throw new ArgumentException("Date of birth cannot be in the future.");
+                }
                 _dateOfBirth = value;
             }
         }
 
-        //Auto-implemented property -can't be null. Position is 정해져 있어서 validation ckeck 필요없음 
+        //Auto-implemented property -can't be null. no need to do validation ckeck. Position is set already
         public Position Position { get; set; }
         public Shot Shot { get; set; }
 
@@ -72,23 +125,26 @@
         //Create default instance hockey player 
         public HockeyPlayer() 
         {
-            _firstName = string.Empty; //특정이름 안넣음, null 안된다고 했는데 했음 나중에 설명 
+            _firstName = string.Empty; //no specific name, null here, why? 
             _lastName = string.Empty;
             _birthPlace = string.Empty;
             _dateOfBirth = new DateOnly();
             _weightInPounds = 0;
             _heightInInches = 0;
             Position = Position.Center;
-            Shot = Shot.left;
+            Shot = Shot.Left;
         }
 
-        public HockeyPlayer(string firstName, string lastName, string birthPlace, DateOnly dateOfBirth, int weightInPounds, int heightInInches, Position position.Center, Shot shot.Left)
+        public HockeyPlayer(string firstName, string lastName, string birthPlace, DateOnly dateOfBirth, int weightInPounds, int heightInInches, Position position = Position.Center, Shot shot = Shot.Left)
         {
+            FirstName = firstName;
+            LastName = lastName;
             BirthPlace = birthPlace;
             HeightInInches = heightInInches;
+            WeightInPound = weightInPounds;
+            DateOfBirth = dateOfBirth;
             Position = position;
             Shot = shot; 
-            //TODO: assign the remaining properties once you've completed them 
         }
     }
 }

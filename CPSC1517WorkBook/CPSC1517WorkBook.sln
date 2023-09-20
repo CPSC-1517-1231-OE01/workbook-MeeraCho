@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HockeyData", "HockeyData\HockeyData.csproj", "{5DAF27D6-013B-49DA-A854-BDCE219371E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HockeyData", "HockeyData\HockeyData.csproj", "{5DAF27D6-013B-49DA-A854-BDCE219371E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{162450C6-E112-4462-9D45-BBCFEB4C7561}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HockeyConsoleApp", "HockeyConsoleApp\HockeyConsoleApp.csproj", "{55DE09E2-0EF1-4361-A2D0-2249C72D25CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HockeyTestProject", "HockeyTestProject\HockeyTestProject.csproj", "{BF84AD95-4E64-48FE-9C2D-9AD1995247F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{5DAF27D6-013B-49DA-A854-BDCE219371E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DAF27D6-013B-49DA-A854-BDCE219371E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DAF27D6-013B-49DA-A854-BDCE219371E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{162450C6-E112-4462-9D45-BBCFEB4C7561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162450C6-E112-4462-9D45-BBCFEB4C7561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162450C6-E112-4462-9D45-BBCFEB4C7561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162450C6-E112-4462-9D45-BBCFEB4C7561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55DE09E2-0EF1-4361-A2D0-2249C72D25CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DE09E2-0EF1-4361-A2D0-2249C72D25CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DE09E2-0EF1-4361-A2D0-2249C72D25CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DE09E2-0EF1-4361-A2D0-2249C72D25CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF84AD95-4E64-48FE-9C2D-9AD1995247F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF84AD95-4E64-48FE-9C2D-9AD1995247F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF84AD95-4E64-48FE-9C2D-9AD1995247F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF84AD95-4E64-48FE-9C2D-9AD1995247F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

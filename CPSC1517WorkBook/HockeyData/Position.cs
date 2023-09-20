@@ -7,7 +7,7 @@
 	public enum Position
 	{
 		LeftWing = 1,
-		RightWing = ,
+		RightWing,
 		Center,
 		Defense,
 		Goalie
