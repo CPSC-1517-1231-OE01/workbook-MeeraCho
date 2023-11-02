@@ -7,9 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HockeyData", "HockeyData\Ho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{162450C6-E112-4462-9D45-BBCFEB4C7561}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HockeyConsoleApp", "HockeyConsoleApp\HockeyConsoleApp.csproj", "{55DE09E2-0EF1-4361-A2D0-2249C72D25CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HockeyConsoleApp", "HockeyConsoleApp\HockeyConsoleApp.csproj", "{55DE09E2-0EF1-4361-A2D0-2249C72D25CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HockeyTestProject", "HockeyTestProject\HockeyTestProject.csproj", "{BF84AD95-4E64-48FE-9C2D-9AD1995247F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HockeyTestProject", "HockeyTestProject\HockeyTestProject.csproj", "{BF84AD95-4E64-48FE-9C2D-9AD1995247F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilitiesTestProject", "UtilitiesTestProject\UtilitiesTestProject.csproj", "{62134535-6089-4137-B658-85F189B7CAD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSampleApp", "BlazorSampleApp\BlazorSampleApp.csproj", "{597232ED-8B53-450C-BCF7-F2BBC4F604C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMI", "BMI\BMI.csproj", "{B23257CB-C1D3-434C-84EE-244291C28DF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WestWindSystem", "WestWindSystem\WestWindSystem.csproj", "{2E967425-BBF0-405C-BAE2-2220CBB0A49A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{BF84AD95-4E64-48FE-9C2D-9AD1995247F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF84AD95-4E64-48FE-9C2D-9AD1995247F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF84AD95-4E64-48FE-9C2D-9AD1995247F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62134535-6089-4137-B658-85F189B7CAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62134535-6089-4137-B658-85F189B7CAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62134535-6089-4137-B658-85F189B7CAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62134535-6089-4137-B658-85F189B7CAD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{597232ED-8B53-450C-BCF7-F2BBC4F604C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597232ED-8B53-450C-BCF7-F2BBC4F604C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597232ED-8B53-450C-BCF7-F2BBC4F604C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597232ED-8B53-450C-BCF7-F2BBC4F604C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B23257CB-C1D3-434C-84EE-244291C28DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B23257CB-C1D3-434C-84EE-244291C28DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B23257CB-C1D3-434C-84EE-244291C28DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B23257CB-C1D3-434C-84EE-244291C28DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E967425-BBF0-405C-BAE2-2220CBB0A49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E967425-BBF0-405C-BAE2-2220CBB0A49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E967425-BBF0-405C-BAE2-2220CBB0A49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E967425-BBF0-405C-BAE2-2220CBB0A49A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
